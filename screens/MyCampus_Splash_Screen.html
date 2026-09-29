@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MyCampus - Splash Screen</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#004f20",
+            "tertiary-fixed-dim": "#4ae176",
+            "on-secondary-fixed": "#001d31",
+            "outline": "#6e7980",
+            "error-container": "#ffdad6",
+            "primary": "#00668a",
+            "error": "#ba1a1a",
+            "surface-tint": "#00668a",
+            "on-secondary-fixed-variant": "#004b73",
+            "secondary": "#006398",
+            "on-primary-fixed-variant": "#004c69",
+            "secondary-fixed": "#cce5ff",
+            "primary-fixed-dim": "#7bd0ff",
+            "tertiary-fixed": "#6bff8f",
+            "outline-variant": "#bdc8d1",
+            "on-primary-container": "#004965",
+            "on-error-container": "#93000a",
+            "on-surface": "#131b2e",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-container": "#00476e",
+            "inverse-surface": "#283044",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#002109",
+            "on-secondary": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#3e484f",
+            "surface": "#faf8ff",
+            "background": "#faf8ff",
+            "on-primary": "#ffffff",
+            "surface-container": "#eaedff",
+            "tertiary": "#006e2f",
+            "surface-container-highest": "#dae2fd",
+            "primary-fixed": "#c4e7ff",
+            "surface-container-low": "#f2f3ff",
+            "on-background": "#131b2e",
+            "on-primary-fixed": "#001e2c",
+            "tertiary-container": "#2ccb63",
+            "surface-variant": "#dae2fd",
+            "on-tertiary-fixed-variant": "#005321",
+            "surface-dim": "#d2d9f4",
+            "secondary-container": "#5bb8fe",
+            "surface-bright": "#faf8ff",
+            "secondary-fixed-dim": "#93ccff",
+            "surface-container-high": "#e2e7ff",
+            "primary-container": "#38bdf8",
+            "inverse-on-surface": "#eef0ff",
+            "inverse-primary": "#7bd0ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "margin": "1.25rem",
+            "space-md": "1rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem"
+          },
+          "fontFamily": {
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "display-sm": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.03); opacity: 0.94; }
+    }
+    @keyframes progress-slide {
+      0% { transform: translateX(-100%); }
+      50% { transform: translateX(20%); }
+      100% { transform: translateX(250%); }
+    }
+    @keyframes aura-rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .animate-aura {
+      animation: aura-rotate 18s linear infinite;
+    }
+    .animate-logo-pulse {
+      animation: pulse-subtle 4s ease-in-out infinite;
+    }
+    .animate-progress {
+      animation: progress-slide 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex items-center justify-center p-0 md:p-6 overflow-hidden select-none">
+<!-- Mobile Device Shell Frame -->
+<main class="relative w-full max-w-[412px] h-[884px] md:h-[844px] bg-surface flex flex-col justify-between items-center px-margin py-8 md:rounded-[44px] md:shadow-[0_24px_60px_-12px_rgba(15,23,42,0.12)] md:border md:border-outline-variant/30 overflow-hidden">
+<!-- Ambient Luminous Background Gradients -->
+<div class="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-36 -left-28 w-96 h-96 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-primary-fixed/20 blur-2xl pointer-events-none animate-aura"></div>
+<!-- Top Status Bar Area -->
+<header class="w-full flex justify-between items-center pt-2 px-2 z-10">
+<div class="flex items-center space-x-1.5">
+<span class="text-label-md font-label-md text-on-surface font-semibold tracking-tight">9:41</span>
+</div>
+<div class="flex items-center space-x-2 text-on-surface">
+<span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[16px]">wifi</span>
+<span class="material-symbols-outlined text-[20px]">battery_full</span>
+</div>
+</header>
+<!-- Centerpiece Brand Hero Section -->
+<section class="flex flex-col items-center justify-center z-10 my-auto text-center px-4 w-full">
+<!-- Animated Architectural Logo Icon Container -->
+<div class="relative flex items-center justify-center mb-7 animate-logo-pulse">
+<!-- Soft Tinted Drop Glow -->
+<div class="absolute inset-0 rounded-3xl bg-primary-container/30 blur-xl scale-110"></div>
+<!-- Outer Sleek Brand Card -->
+<div class="relative w-24 h-24 rounded-3xl bg-surface-container-lowest border border-outline-variant/40 shadow-[0_12px_32px_-4px_rgba(15,23,42,0.08),0_4px_12px_-2px_rgba(56,189,248,0.15)] flex items-center justify-center">
+<!-- Inner Precision Gradient Badge -->
+<div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-secondary to-primary-container flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-surface-container-lowest text-4xl" data-icon="domain" data-weight="fill" style="font-variation-settings: 'FILL' 1;">domain</span>
+</div>
+<!-- Decorative Floating Corner Beacon -->
+<div class="absolute -top-1.5 -right-1.5 w-6 h-6 rounded-full bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-center shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+</div>
+</div>
+</div>
+<!-- App Name & Smart Academic Identity -->
+<div class="flex items-center justify-center space-x-1">
+<h1 class="text-display-sm font-display-sm text-on-surface font-extrabold tracking-tight">
+          MyCampus
+        </h1>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container translate-y-1 shadow-[0_0_8px_rgba(56,189,248,0.8)]"></span>
+</div>
+<!-- Tagline / Subtitle -->
+<p class="text-body-md font-body-md text-on-surface-variant mt-2 max-w-[260px] tracking-normal">
+        Your Campus, Connected
+      </p>
+<!-- Institutional Verification Chip -->
+<div class="mt-4 inline-flex items-center space-x-1.5 py-1 px-3.5 rounded-full bg-surface-container-lowest border border-outline-variant/50 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[15px]" data-icon="school">school</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant tracking-wider uppercase font-semibold">Smart Student Portal</span>
+</div>
+</section>
+<!-- Bottom Action & Loading Transition Section -->
+<footer class="w-full flex flex-col items-center z-10 pb-4 space-y-6">
+<!-- Minimalist Dynamic Loading Bar -->
+<div class="w-48 flex flex-col items-center space-y-2">
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden relative">
+<div class="w-20 h-full bg-primary-container rounded-full animate-progress shadow-[0_0_10px_rgba(56,189,248,0.6)]"></div>
+</div>
+<span class="text-body-sm font-body-sm text-outline font-medium tracking-tight">
+          Synchronizing campus data...
+        </span>
+</div>
+<!-- Version & Institutional Trust Footer -->
+<div class="flex flex-col items-center space-y-1">
+<p class="text-label-md font-label-md text-on-surface-variant font-medium tracking-tight">
+          Empowering Student Success
+        </p>
+<div class="flex items-center space-x-2 text-outline text-label-sm font-label-sm">
+<span>Version 2.4.0</span>
+<span class="text-[8px]">•</span>
+<span>Build 842</span>
+</div>
+</div>
+<!-- Mobile Native Navigation Indicator Bar -->
+<div class="w-32 h-1 bg-on-surface/20 rounded-full mt-2"></div>
+</footer>
+</main>
+</body></html>
